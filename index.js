@@ -1,35 +1,43 @@
 const qanda = [
   {
-    question: "In 1768, Captain James Cook set out to explore which ocean?",
+    question: "I want to generate a random secure hex token of 32 bytes to reset the password, which method should I use",
     answers: [
-      "A. Pacific Ocean",
-      "B. Atlantic Ocean",
-      "C. Indian Ocean",
-      "D. Arctic Ocean",
+      "A. secrets.hexToken(32)",
+      "B. secrets.hex_token(32)",
+      "C. secrets.tokenHex(32)",
+      "D. secrets.token_hex(32)",
     ],
-    correct: [0, 1],
+    correct: [1],
   },
 
   {
-    question: "In 1768, Captain James Cook set out to explore which ocean?",
+    question: "str = “PYnative”. Choose the correct function to pick a single character from a given string randomly.",
     answers: [
-      "A. Pacific Ocean",
-      "B. Atlantic Ocean",
-      "C. Indian Ocean",
-      "D. Arctic Ocean",
+      "A. random.sample(str)",
+      "B. random.choice(str)",
+      "C. random.get(str, 1)",
     ],
     correct: [1, 2],
   },
 
   {
-    question: "In 1768, Captain James Cook set out to explore which ocean?",
+    question: "To generate a random secure Universally unique ID which method should I use",
     answers: [
-      "A. Pacific Ocean",
-      "B. Atlantic Ocean",
-      "C. Indian Ocean",
-      "D. Arctic Ocean",
+      "A. uuid.uuid4()",
+      "B. uuid.uuid3()",
+      "C. uuid.uuid2()",
+      "D. uuid.uuid()",
     ],
-    correct: [3],
+    correct: [0],
+  },
+
+  {
+    question: "The random.seed() method is used to initialize the pseudorandom number generator. The random module uses the seed value as a base to generate a random number. If seed value is not present, it takes the system’s current time.",
+    answers: [
+      "A. True",
+      "B. False",
+    ],
+    correct: [0],
   },
 ];
 
